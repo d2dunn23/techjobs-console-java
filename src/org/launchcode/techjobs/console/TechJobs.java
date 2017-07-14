@@ -85,14 +85,12 @@ public class TechJobs {
         }
 
         do {
-
             System.out.println("\n" + menuHeader);
 
             // Print available choices
             for (Integer j = 0; j < choiceKeys.length; j++) {
                 System.out.println("" + j + " - " + choices.get(choiceKeys[j]));
             }
-
             choiceIdx = in.nextInt();
             in.nextLine();
 
@@ -113,23 +111,17 @@ public class TechJobs {
 
         if (someJobs.size() > 0) {
 
-
             for (HashMap<String, String> job : someJobs) {
-
                 System.out.println("*****");
 
                 for (String key : job.keySet()) {
-
                     String value = job.get(key);
-
                     System.out.println(key + ": " + value);
                 }
-
                 System.out.println("*****" + "\n");
-
             }
-
-        } else {
+        }
+        else {
             System.out.println("There are no matching results.");
         }
 
